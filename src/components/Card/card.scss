@@ -1,0 +1,41 @@
+@import "../../assets//variables.scss";
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: $bg-secondary;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+
+  @media (max-width: $xs) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.card.flipped .card-back {
+  display: none;
+}
+
+.card.flipped .card-front {
+  display: block;
+
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+
+    @media (max-width: $xs) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

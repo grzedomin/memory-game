@@ -1,0 +1,9 @@
+@import "./assets//variables.scss";
+* {
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+
+body {
+  background-color: $bg-primary;
+}
